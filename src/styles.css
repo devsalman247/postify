@@ -56,3 +56,7 @@ button:disabled {
 button:active {
   background-color: var(--bs-btn-disabled-bg);
 }
+
+.ngx-toastr .toast-message {
+  color: white !important;
+}
