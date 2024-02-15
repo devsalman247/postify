@@ -61,7 +61,7 @@ export class LoginComponent {
     }
   }
 
-  showToast({ type, message, title = '', timeOut = 20000 }: IToast) {
+  showToast({ type, message, title = '', timeOut = 1000 }: IToast) {
     if (type === 'error') {
       this.toaster.error(message, title, { timeOut });
       return;
