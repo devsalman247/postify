@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  color: var(--bs-dark-text-emphasis) !important;
+}
+
+.navbar nav a {
+  color: var(--bs-dark-text-emphasis) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: #fa0000 !important;
+  border-bottom: 1px solid #fa0000;
+}
+
+.text-blue {
+  color: #0062ca !important;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button:disabled {
+  pointer-events: all !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+}
+
+button:active {
+  background-color: var(--bs-btn-disabled-bg);
+}

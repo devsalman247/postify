@@ -1,0 +1,12 @@
+<div class="d-flex align-items-baseline justify-content-between px-5 py-3 text-bg-light navbar">
+    <div>
+        <h1 class="fs-3 fst-italic">Postify</h1>
+    </div>
+    <nav class="d-flex gap-4 fs-18 fw-medium">
+        @for (route of routes; track route.id) {
+        <a [routerLink]="route.path" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            {{ route.name }}
+        </a>
+        }
+    </nav>
+</div>
